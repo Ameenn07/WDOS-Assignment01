@@ -1,0 +1,147 @@
+
+/* Main Logo */
+.mainlogo {
+    position: absolute;
+    left: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(90deg, black, #4B0082, black);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 0 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar input[type="checkbox"] {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.navbar a:hover {
+    background: linear-gradient(90deg, #6A0DAD, #800080);
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+
+/* Mobile Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        height: 60px;
+        justify-content: space-between;
+    }
+
+    .mainlogo {
+        left: 20px;
+    }
+
+    .hamburger {
+        display: block;
+        order: 2;
+        margin-left: auto;
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 250px;
+        background: linear-gradient(90deg, black, #4B0082, black);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        border-radius: 0 0 10px 10px;
+        padding: 10px 0;
+    }
+
+    .navbar input[type="checkbox"]:checked ~ ul {
+        display: flex;
+    }
+
+    .navbar ul li {
+        text-align: right;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: white;
+    padding: 20px;
+    margin-top: auto;
+    text-align: center; 
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.socialIcons a:hover {
+    background-color: #444;
+}
+
+.socialIcons a i {
+    font-size: 1.5em;
+    color: black;
+}
+
+.footerNav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+}
+
+.footerNav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footerBottom {
+    text-align: center;
+    font-size: 0.9em;
+    opacity: 0.7;
+}
+
