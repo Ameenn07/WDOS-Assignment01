@@ -749,3 +749,32 @@ tfoot td {
     font-weight: bold;
     margin-top: 5px;
 }
+
+
+/* Style for Add to Cart Button */
+.add-to-cart {
+    background: linear-gradient(135deg, #6a1b9a, #391569); /* Gradient from purple to black */
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 150px; /* Full width to align with product details */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover and focus effects */
+}
+
+.add-to-cart:hover {
+    background: linear-gradient(135deg, #8e24aa, #333333); /* Lighter gradient on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+.add-to-cart:focus {
+    outline: none; /* Remove outline on focus */
+    box-shadow: 0 0 8px rgba(106, 27, 154, 0.7); /* Focus effect with purple */
+}
+
+
