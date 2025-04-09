@@ -148,7 +148,8 @@ footer {
 /* Cart Icon */
 .cart-icon {
     font-size: 24px;
-    margin-right: 20px; /* Add space between the icon and navbar edges */
+    position: absolute;
+    right: 20px; /* Move the icon to the right edge */
 }
 
 .cart-icon a {

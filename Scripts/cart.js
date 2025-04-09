@@ -25,15 +25,24 @@ function addToCart(productName, productPrice) {
     renderCart(); // Re-render the cart after adding an item
 }
 
-// Function to remove item from cart
+// Function to remove or decrease quantity of an item from the cart
 function removeFromCart(productName) {
-    // Filter out the item with the given product name
-    cart = cart.filter(item => item.name !== productName);
+    const existingItemIndex = cart.findIndex(item => item.name === productName);
 
-    // Save updated cart to localStorage
-    localStorage.setItem('cart', JSON.stringify(cart));
+    if (existingItemIndex !== -1) {
+        if (cart[existingItemIndex].quantity > 1) {
+            // If quantity is greater than 1, decrease the quantity
+            cart[existingItemIndex].quantity -= 1;
+        } else {
+            // If quantity is 1, remove the item from cart
+            cart.splice(existingItemIndex, 1);
+        }
 
-    renderCart(); // Re-render the cart after removing an item
+        // Save updated cart to localStorage
+        localStorage.setItem('cart', JSON.stringify(cart));
+
+        renderCart(); // Re-render the cart after removing an item
+    }
 }
 
 // Add event listeners to all "Add to Cart" buttons

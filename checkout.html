@@ -3,35 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="GameForge - Your ultimate destination for gaming consoles, peripherals, and the latest games.">
-    <meta name="keywords" content="GameForge, gaming, consoles, PC peripherals, latest games">
-    <meta name="author" content="Noman">
-    <title>GameForge</title>
+    <meta name="description" content="Checkout page for GameForge - Your ultimate destination for gaming parts.">
+    <meta name="keywords" content="GameForge, checkout, gaming, peripherals, online store">
+    <meta name="author" content="Your Name">
+    <title>Checkout - GameForge</title>
+    <link rel="stylesheet" href="order.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href='Styles/footer.css'>
-    <link rel="stylesheet" href='Styles/index.css'>
+    <link rel="stylesheet" href="Styles/footer.css">
+    <link rel="stylesheet" href="Styles/index.css">
     <link rel="manifest" href="./Favicon/manifest.json">
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">  
 </head>
 <body>
-    
     <nav class="navbar">
         <p class="mainlogo">GameForge</p>
         <input type="checkbox" id="menu-toggle" />
@@ -44,7 +27,7 @@
             <li><a href="Consoles.html">Consoles</a></li>
             <li><a href="Gamepage.html">Game Page</a></li>
             <li><a href="FAQ.html">Queries and FAQ</a></li>
-            <li><a href="order.html">Order</a></li> <!-- Added link to Order page -->
+            <li><a href="order.html">Order</a></li>
         </ul>
         <div class="cart-icon">
             <a href="cart.html">
@@ -53,32 +36,49 @@
         </div>
     </nav>
     
-    
-    <p class="spacing"></p>   
-     
- <!-- Cart Page Content -->
- <main>
-    <h1>Your Cart</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Product</th>
-                <th>Quantity</th>
-                <th>Price</th>
-            </tr>
-        </thead>
-        <tbody id="cart-items">
-            <!-- Cart items will be dynamically added here -->
-        </tbody>
-    </table>
+    <main>
+        <h1>Checkout</h1>
+        
+        <form id="checkout-form">
+            <h3>Shipping Information</h3>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="address">Shipping Address</label>
+            <input type="text" id="address" name="address" required>
 
-    <h3>Total: LKR <span id="total-price">0</span></h3>
-    <a href="checkout.html">
-        <button>Proceed to Checkout</button>
-    </a>
-</main>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+            
+            <h3>Payment Information</h3>
+            <label for="card">Card Number</label>
+            <input type="text" id="card" name="card" required>
+            
+            <label for="expiry">Expiry Date</label>
+            <input type="month" id="expiry" name="expiry" required>
+            
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" required>
+            
+            <button type="submit">Complete Purchase</button>
+        </form>
 
-
+        <h3>Your Cart Summary</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="cart-summary">
+                <!-- Cart items will be dynamically added here -->
+            </tbody>
+        </table>
+        
+        <h3>Total: LKR <span id="total-price">0</span></h3>
+    </main>
 
     <footer>
         <div class="footerContainer">
@@ -104,7 +104,6 @@
         </div>
     </footer>
 
-    <script src="Scripts/cart.js"></script>
-
+    <script src="checkout.js"></script>
 </body>
 </html>

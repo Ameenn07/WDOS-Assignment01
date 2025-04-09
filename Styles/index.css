@@ -780,7 +780,7 @@ tfoot td {
 
 /* order page /*
 
-/* Main Content */
+
 /* Main Content */
 main {
     padding: 20px;        /* You can reduce this if you want even less space */
@@ -865,4 +865,97 @@ h3 {
 
 #cart-table th {
     background-color: #f2f2f2;
+}
+
+.remove-item {
+    padding: 5px 10px; /* Smaller padding */
+    font-size: 15px;    /* Smaller font size */
+    background-color: #28a745; /* Green background */
+    color: white;
+    border-radius: 4px;
+    width: auto;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.remove-item:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+
+/* Checkout Form */
+form#checkout-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+form#checkout-form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="month"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box; /* Ensures padding doesn't increase the width */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="month"]:focus {
+    outline: none;
+    border-color: #28a745;
+}
+
+button {
+    padding: 15px 25px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Small adjustments for form responsiveness */
+@media (max-width: 600px) {
+    form#checkout-form {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="month"] {
+        font-size: 14px;
+        padding: 10px;
+    }
 }
