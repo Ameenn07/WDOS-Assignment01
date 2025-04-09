@@ -145,11 +145,17 @@ footer {
     opacity: 0.7;
 }
 
-/* Cart Icon */
+/* Cart Icon (Positioned at bottom right) */
 .cart-icon {
     font-size: 24px;
-    position: absolute;
-    right: 20px; /* Move the icon to the right edge */
+    position: fixed; /* Fixed position on the screen */
+    bottom: 100px; /* Distance from the bottom */
+    right: 50px; /* Distance from the right */
+    background-color: #4B0082; /* Optional: background color */
+    padding: 10px;
+    border-radius: 100%; /* Circular shape */
+    z-index: 1000; /* Ensure it stays above other elements */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Optional: shadow for effect */
 }
 
 .cart-icon a {
