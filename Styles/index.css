@@ -809,6 +809,8 @@ h3 {
     margin-top: 20px;
 }
 
+
+
 /* Product Card */
 .product-card {
     background-color: #fff;
@@ -882,6 +884,100 @@ h3 {
 .remove-item:hover {
     background-color: #218838; /* Darker green on hover */
 }
+
+/* For Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr); /* Adjust to 3 items per row on tablets */
+    }
+
+    h1 {
+        font-size: 28px; /* Smaller font for the title */
+    }
+
+    h3 {
+        font-size: 20px; /* Adjust font size for subheadings */
+    }
+
+    .product-card {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
+
+    .product-card h3 {
+        font-size: 18px; /* Smaller product name font */
+    }
+
+    .product-card p {
+        font-size: 16px; /* Adjust product description font */
+    }
+
+    .product-card button {
+        padding: 8px 16px; /* Smaller button size */
+    }
+}
+
+/* For Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr); /* Adjust to 2 items per row on mobile */
+    }
+
+    h1 {
+        font-size: 24px; /* Further reduce font size on mobile */
+    }
+
+    h3 {
+        font-size: 18px; /* Smaller subheading font */
+    }
+
+    .product-card {
+        padding: 10px; /* Even smaller padding on mobile */
+    }
+
+    .product-card h3 {
+        font-size: 16px; /* Adjust product name size */
+    }
+
+    .product-card p {
+        font-size: 14px; /* Adjust product description for mobile */
+    }
+
+    .product-card button {
+        padding: 8px 12px; /* Adjust button size */
+    }
+}
+
+/* For Very Small Screens (max-width: 480px) */
+@media (max-width: 480px) {
+    .product-grid {
+        grid-template-columns: 1fr; /* Stack items on very small screens */
+    }
+
+    h1 {
+        font-size: 20px; /* Smaller font for very small screens */
+    }
+
+    h3 {
+        font-size: 16px; /* Smaller subheading font */
+    }
+
+    .product-card {
+        padding: 8px; /* Minimal padding for small screens */
+    }
+
+    .product-card h3 {
+        font-size: 14px; /* Adjust product name size */
+    }
+
+    .product-card p {
+        font-size: 12px; /* Adjust description size */
+    }
+
+    .product-card button {
+        padding: 6px 10px; /* Adjust button size for small screens */
+    }
+}
+
 
 
 /* Checkout Form */
