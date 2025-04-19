@@ -778,7 +778,39 @@ tfoot td {
 }
 
 
-/* order page /*
+/* order page */
+
+.cart-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.cart-options label,
+.cart-options input,
+.cart-options button {
+    margin-bottom: 10px;
+}
+
+.cart-options input {
+    width: 60px;
+    padding: 5px;
+    text-align: center;
+}
+
+.cart-options button {
+    padding: 10px 20px;
+    background-color: #5f4b8b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cart-options button:hover {
+    background-color: #4a397d;
+}
 
 
 /* Main Content */

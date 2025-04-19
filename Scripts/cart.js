@@ -92,3 +92,83 @@ function renderCart() {
 document.addEventListener('DOMContentLoaded', function() {
     renderCart();
 });
+
+function addToCart(productName, productPrice) {
+    const quantity = parseInt(document.querySelector('.quantity-input').value); // Get quantity from the input
+
+    const item = {
+        name: productName,
+        price: productPrice,
+        quantity: quantity
+    };
+
+    // Check if item already exists in the cart
+    const existingItemIndex = cart.findIndex(item => item.name === productName);
+    if (existingItemIndex !== -1) {
+        // Item exists, increase the quantity
+        cart[existingItemIndex].quantity += quantity;
+    } else {
+        // Add new item to cart
+        cart.push(item);
+    }
+
+    // Save cart to localStorage
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    renderCart(); // Re-render the cart after adding an item
+}
+
+
+function renderCart() {
+    const cartTable = document.getElementById('cart-items');
+    cartTable.innerHTML = ''; // Clear existing items
+
+    let totalPrice = 0;
+
+    // Loop through cart items and add rows to the table
+    cart.forEach(item => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td>
+                ${item.name} 
+                <button class="remove-item" data-product="${item.name}">Remove</button>
+            </td>
+            <td>
+                <input type="number" class="quantity-update" value="${item.quantity}" min="1" max="10" data-product="${item.name}">
+            </td>
+            <td>LKR ${item.price}</td>
+        `;
+        cartTable.appendChild(row);
+        totalPrice += item.price * item.quantity;
+    });
+
+    // Display the total price
+    document.getElementById('total-price').textContent = totalPrice;
+
+    // Add event listeners to remove buttons
+    document.querySelectorAll('.remove-item').forEach(button => {
+        button.addEventListener('click', function() {
+            const productName = this.dataset.product;
+            removeFromCart(productName);
+        });
+    });
+
+    // Add event listeners to quantity inputs for updating quantity
+    document.querySelectorAll('.quantity-update').forEach(input => {
+        input.addEventListener('change', function() {
+            const newQuantity = parseInt(this.value);
+            const productName = this.dataset.product;
+            updateCartQuantity(productName, newQuantity);
+        });
+    });
+}
+
+// Function to update cart quantity
+function updateCartQuantity(productName, newQuantity) {
+    const existingItemIndex = cart.findIndex(item => item.name === productName);
+    if (existingItemIndex !== -1) {
+        cart[existingItemIndex].quantity = newQuantity;
+        localStorage.setItem('cart', JSON.stringify(cart));
+        renderCart(); // Re-render the cart after quantity update
+    }
+}
