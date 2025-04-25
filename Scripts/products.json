@@ -1,0 +1,183 @@
+[
+  {
+    "name": "Intel i5",
+    "price": 25000,
+    "image": "Images/order page/Intel i5.webp",
+    "category": "CPU"
+  },
+  {
+    "name": "Intel i7",
+    "price": 30000,
+    "image": "Images/order page/Intel i7.jpg",
+    "category": "CPU"
+  },
+  {
+    "name": "AMD Ryzen 5",
+    "price": 28000,
+    "image": "Images/order page/AMD Ryzen 5.jpg",
+    "category": "CPU"
+  },
+  {
+    "name": "AMD Ryzen 7",
+    "price": 35000,
+    "image": "Images/order page/AMD Ryzen 7.jpg",
+    "category": "CPU"
+  },
+  {
+    "name": "Intel i9",
+    "price": 45000,
+    "image": "Images/order page/Intel i9.jpg",
+    "category": "CPU"
+  },
+  {
+    "name": "AMD Threadripper",
+    "price": 100000,
+    "image": "Images/order page/AMD_Threadripper_resized.jpg",
+    "category": "CPU"
+  },
+  {
+    "name": "NVIDIA 3060",
+    "price": 80000,
+    "image": "Images/order page/NVIDIA_3060_resized.jpg",
+    "category": "GPU"
+  },
+  {
+    "name": "NVIDIA 3070",
+    "price": 120000,
+    "image": "Images/order page/NVIDIA_3070_resized.jpg",
+    "category": "GPU"
+  },
+  {
+    "name": "AMD RX 6800",
+    "price": 100000,
+    "image": "Images/order page/AMD_RX_6800_resized.jpg",
+    "category": "GPU"
+  },
+  {
+    "name": "NVIDIA RTX 3080",
+    "price": 150000,
+    "image": "Images/order page/NVIDIA RTX 3080.jpg",
+    "category": "GPU"
+  },
+  {
+    "name": "AMD RX 6900 XT",
+    "price": 180000,
+    "image": "Images/order page/AMD RX 6900 XT.jpg",
+    "category": "GPU"
+  },
+  {
+    "name": "NVIDIA RTX 3090",
+    "price": 250000,
+    "image": "Images/order page/NVIDIA_RTX_3090_resized.jpg",
+    "category": "GPU"
+  },
+  {
+    "name": "Corsair Vengeance RGB",
+    "price": 6500,
+    "image": "Images/order page/Corsair_Vengeance_RGB_Pro_resized.jpg",
+    "category": "RAM"
+  },
+  {
+    "name": "G.SKILL Ripjaws V 16GB",
+    "price": 12000,
+    "image": "Images/order page/G_SKILL_Ripjaws_V_16GB_resized.jpg",
+    "category": "RAM"
+  },
+  {
+    "name": "HyperX Fury rgb 16GB",
+    "price": 10500,
+    "image": "Images/order page/Kingston_Fury_Beast_resized.jpg",
+    "category": "RAM"
+  },
+  {
+    "name": "Corsair Vengeance 32GB",
+    "price": 18000,
+    "image": "Images/order page/Corsair_Vengeance_RGB_Pro_resized_2.jpg",
+    "category": "RAM"
+  },
+  {
+    "name": "Crucial Ballistix 32GB",
+    "price": 20000,
+    "image": "Images/order page/Ballistix_resized.jpg",
+    "category": "RAM"
+  },
+  {
+    "name": "HyperX DDR4 64GB",
+    "price": 45000,
+    "image": "Images/order page/HyperX Predator DDR4 64GB.webp",
+    "category": "RAM"
+  },
+  {
+    "name": "500GB SSD",
+    "price": 10000,
+    "image": "Images/order page/500GB_SSD_resized.png",
+    "category": "Storage"
+  },
+  {
+    "name": "1TB SSD",
+    "price": 18000,
+    "image": "Images/order page/1TB_SSD_resized.jpg",
+    "category": "Storage"
+  },
+  {
+    "name": "2TB SSD",
+    "price": 30000,
+    "image": "Images/order page/2TB_SSD_resized.png",
+    "category": "Storage"
+  },
+  {
+    "name": "500GB HDD",
+    "price": 5000,
+    "image": "Images/order page/500GB HDD.jpg",
+    "category": "Storage"
+  },
+  {
+    "name": "1TB HDD",
+    "price": 8000,
+    "image": "Images/order page/1TB HDD.jpg",
+    "category": "Storage"
+  },
+  {
+    "name": "2TB HDD",
+    "price": 12000,
+    "image": "Images/order page/2TB_HDD_resized.jpg",
+    "category": "Storage"
+  },
+  {
+    "name": "ASUS ROG Strix Z590-E",
+    "price": 15000,
+    "image": "Images/order page/h525.png",
+    "category": "Motherboard"
+  },
+  {
+    "name": "MSI MAG B550",
+    "price": 17000,
+    "image": "Images/order page/1024_resized.png",
+    "category": "Motherboard"
+  },
+  {
+    "name": "Gigabyte AORUS X570",
+    "price": 19000,
+    "image": "Images/order page/1000_resized.png",
+    "category": "Motherboard"
+  },
+  {
+    "name": "ASRock Z590",
+    "price": 21000,
+    "image": "Images/order page/65a6c02d_resized.png",
+    "category": "Motherboard"
+  },
+  {
+    "name": "MSI MPG Z490",
+    "price": 23000,
+    "image": "Images/order page/5b6565d7_resized.png",
+    "category": "Motherboard"
+  },
+  {
+    "name": "Gigabyte Z490 AORUS XTREME WATERFORCE",
+    "price": 25000,
+    "image": "Images/order page/c915ea84_resized.png",
+    "category": "Motherboard"
+  }
+  
+]

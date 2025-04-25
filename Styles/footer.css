@@ -8,6 +8,7 @@
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;
+    
 }
 
 /* Navbar */
@@ -38,7 +39,8 @@
 .navbar ul {
     list-style: none;
     display: flex;
-    gap: 15px;
+    margin-left: auto;
+    gap: 5px;
 }
 
 .navbar a {
